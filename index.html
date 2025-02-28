@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac Web Start</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./font.css" />
+</head>
+
+<body>
+    <p class="time"></p>
+    <p class="date"></p>
+    <svg height="300" width="1920">
+        <defs>
+            <clipPath id="timePath">
+                <text id="timeText" x="0" y="200" font-size="106px"
+                    font-family="'SFPro-Bold', 'PingFang-Bold'">19:54</text>
+            </clipPath>
+        </defs>
+    </svg>
+    <svg height="300" width="1920">
+        <defs>
+            <clipPath id="datePath">
+                <text id="dateText" x="0" y="90" font-size="24px">2月23日 星期日</text>
+            </clipPath>
+        </defs>
+    </svg>
+    <div class="search">
+        <img src="./icon.magnifyingglass.png" />
+        <form action="https://cn.bing.com/search" method="get">
+            <input type="text" name="q" placeholder="搜索" />
+        </form>
+    </div>
+    <div class="dock">
+        <div class="container">
+            <img src="./Finder.png" alt="Finder"
+                onmousedown="this.style.filter = 'brightness(80%)'"
+                onmouseup="this.style.filter = 'brightness(100%)'" />
+            <div class="light lighting"></div>
+        </div>
+        <div class="container">
+            <img src="./Sequoia.png" alt="Sequoia"
+                target="https://codecrafter-tl.github.io/Webintosh"
+                onmousedown="this.style.filter = 'brightness(80%)'"
+                onmouseup="this.style.filter = 'brightness(100%)'"
+                class="app" />
+            <div class="light"></div>
+        </div>
+        <div class="container">
+            <img src="./Apple.png" alt="Apple" target="https://apple.com.cn"
+                onmousedown="this.style.filter = 'brightness(80%)'"
+                onmouseup="this.style.filter = 'brightness(100%)'"
+                class="app" />
+            <div class="light"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

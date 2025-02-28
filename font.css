@@ -1,0 +1,28 @@
+@font-face {
+    src: url(./sf-pro-display_regular.woff2);
+    font-family: 'SFPro-Regular';
+}
+
+@font-face {
+    src: url(./PingFangSC-Regular.woff2);
+    font-family: 'PingFang-Regular';
+}
+
+@font-face {
+    src: url(./sf-pro-display_semibold.woff2);
+    font-family: 'SFPro-Bold';
+}
+
+@font-face {
+    src: url(..//fonts/PingFangSC-Semibold.woff2);
+    font-family: 'PingFang-Bold';
+}
+
+@font-face {
+    src: url(./PingFangSC-Light.woff2);
+    font-family: 'PingFang-Light';
+}
+
+body {
+    font-family: 'SFPro-Regular', 'PingFang-Regular';
+}
