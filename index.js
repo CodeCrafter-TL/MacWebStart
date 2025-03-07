@@ -53,13 +53,15 @@ containers.forEach(container => {
     const img = container.querySelector("img.app");
     const light = container.querySelector(".light");
 
-    img.addEventListener("click", () => {
-        img.style.animation = "loading 1.5s cubic-bezier(.41,.36,.78,.94)";
-        setTimeout(() => {
-            light.classList.add("lighting");
-            window.location = img.getAttribute("target");
-        }, 1500);
-    });
+    if (img) {
+        img.addEventListener("click", () => {
+            img.style.animation = "loading 1.5s cubic-bezier(.41,.36,.78,.94)";
+            setTimeout(() => {
+                light.classList.add("lighting");
+                window.location = img.getAttribute("target");
+            }, 1500);
+        });
+    }
 });
 
 // Main initializations
